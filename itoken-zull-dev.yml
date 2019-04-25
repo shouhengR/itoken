@@ -1,0 +1,14 @@
+#  dev环境
+#  application name
+spring:
+  application:
+    name: itoken-zuul
+#端口
+server:
+  port: 6001
+
+#注册到eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka,http://localhost:8002/eureka

@@ -1,0 +1,19 @@
+#  dev环境
+#端口
+server:
+  port: 7001
+#  application name
+spring:
+  application:
+    name: itoken-zipkin-7001
+#注册到eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
