@@ -1,19 +1,19 @@
 # application name
 spring:
   application:
-    name: itoken-eureka-eureka-8001
+    name: itoken-eureka-8001-prod
 # 链路追踪
   zipkin:
-    base-url: http://192.168.25.128:7001
+    base-url: http://www.zikpin7001.com:7001
 # eureka 集群
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://ip:8001/eureka,http://ip:8002/eureka
+      defaultZone: http://www.eureka8002.com:8002/eureka
   instance:
-    hostname: 192.168.25.128
+    hostname: itoken-eureka-8001
     ip-address: true
 #端口
 server:

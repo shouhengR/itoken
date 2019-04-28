@@ -5,12 +5,12 @@ server:
 #  application name
 spring:
   application:
-    name: itoken-zipkin-7001
+    name: itoken-zipkin-7001-dev
 #注册到eureka
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka
+      defaultZone: http://www.eureka8001.com:8001/eureka
 
 management:
   metrics:
