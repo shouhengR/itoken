@@ -6,6 +6,7 @@ server:
 spring:
   application:
     name: itoken-zipkin-7001-dev
+
 #注册到eureka
 eureka:
   client:
