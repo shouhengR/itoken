@@ -1,8 +1,11 @@
 spring:
   application:
     name: itoken-service-admin-8100-dev
+
   zipkin:
     base-url: http://www.zikpin7001.com:7001
+    
+  #  配置数据库
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -30,4 +33,3 @@ management:
 
 mybatis:
   config-location: classpath:mybatis/MapperConfig.xml
-#        配置数据库
