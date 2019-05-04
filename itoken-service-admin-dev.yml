@@ -29,5 +29,5 @@ management:
         include: [health,info]
 
 mybatis:
-  config-location: classpath:MapperConfig.xml
+  config-location: classpath:mybatis/MapperConfig.xml
 #        配置数据库
