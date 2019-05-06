@@ -1,0 +1,22 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: itoken-web-admin
+  thymeleaf:
+    cache: false
+  zipkin:
+    base-url: http://www.zikpin7001.com:7001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka8001.com:8001/eureka
+  instance:
+    ip-address: true
+    hostname: itoken-web-admin
+
+feign:
+  hystrix:
+    enabled: true
