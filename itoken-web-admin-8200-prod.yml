@@ -1,22 +1,34 @@
-server:
-  port: 8200
-
 spring:
   application:
-    name: itoken-web-admin
-  thymeleaf:
-    cache: false
+    name: itoken-web-admin-8200
   zipkin:
     base-url: http://www.zikpin7001.com:7001
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 721000
+    url: jdbc:mysql://192.168.25.128:3306/itoken-service-admin?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+
+##从8100开始
+server:
+  port: 8200
 
 eureka:
   client:
     service-url:
       defaultZone: http://www.eureka8001.com:8001/eureka,http://www.eureka8002.com:8002/eureka
-  instance:
-    ip-address: true
-    hostname: itoken-web-admin
 
-feign:
-  hystrix:
-    enabled: true
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+mybatis:
+  config-location: classpath:mybatis/MapperConfig.xml
+
+#        配置数据库
