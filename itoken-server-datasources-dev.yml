@@ -1,0 +1,8 @@
+spring:
+  #  配置数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 721000
+    url: jdbc:mysql://192.168.25.128:3306/itoken-service-admin?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
