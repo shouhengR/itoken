@@ -3,12 +3,6 @@ spring:
     name: itoken-web-admin-8200
   zipkin:
     base-url: http://www.zikpin7001.com:7001
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 721000
-    url: jdbc:mysql://192.168.25.128:3306/itoken-service-admin?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
-    type: com.alibaba.druid.pool.DruidDataSource
 
 ##从8100开始
 server:
@@ -27,8 +21,3 @@ management:
     web:
       exposure:
         include: health,info
-
-mybatis:
-  config-location: classpath:mybatis/MapperConfig.xml
-
-#        配置数据库
