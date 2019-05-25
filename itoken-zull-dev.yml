@@ -6,11 +6,10 @@ spring:
 #端口
 server:
   port: 6001
-
 zuul:
   routes:
     posts:
-      path: /zuul/posts/**
+      path: /posts/**
       serviceId: itoken-web-posts
   ignored-services: itoken-web-posts
 
