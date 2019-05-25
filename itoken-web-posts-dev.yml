@@ -1,6 +1,6 @@
 spring:
   application:
-    name: itoken-eureka-dev
+    name: itoken-web-posts
 
 server:
   port: 8201
