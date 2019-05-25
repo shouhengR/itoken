@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: itoken-eureka-dev
+
+server:
+  port: 8201
+
+feign:
+  hystrix:
+    enabled: true
