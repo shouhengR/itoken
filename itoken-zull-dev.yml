@@ -7,8 +7,10 @@ spring:
 server:
   port: 6001
 
-#注册到eureka
-eureka:
-  client:
-    service-url:
-      defaultZone: http://www.eureka8001.com:8001/eureka
+zuul:
+  routes:
+    posts:
+      path: /zuul/posts/**
+      serviceId: itoken-web-posts
+  ignored-services: itoken-web-posts
+

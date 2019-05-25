@@ -1,16 +1,11 @@
 spring:
   application:
-    name: itoken-web-admin-8200
+    name: itoken-web-admin
   zipkin:
     base-url: http://www.zikpin7001.com:7001
 ##从8100开始
 server:
   port: 8200
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://www.eureka8001.com:8001/eureka
 
 management:
   endpoint:
